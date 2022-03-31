@@ -20,9 +20,7 @@
 
 # Einleitung
 
-
-
-
+In dieser LB2 lernen wir die Vagrant umgebung kennen und damit zu arbeiten. Das Ziel der Aufgabe ist es mit hilfe von Vagrant eine Dienstleitung mit mehreren VMs zu erstellen. Wir haben dafür einen Fileserver sowie einen Client erzeugt. Eine Servermaschine für den SMB Fileserver und einen Client, der darauf zugreifen kann. Durch das könen alle Geräte die im selben Netzwerk sind auf freigegeben Dateien zugreifein und es können Berechtigungen für die Ordner & Dateien vergeben werden.
 
 <div id='Umgebung'/>
 
@@ -180,3 +178,10 @@ Um den Share zu verlassen, in welchen man sich eingeloggt hat, muss man nur eine
 
 Um die SSH Verbindung (im Terminal von z.B. Visual Studio Code,...) zu trennen, muss man lediglich einen Befehl eingeben:
 > exit
+
+
+<div id='Fazit'/>
+
+# Fazit
+
+Die Lb fand ich sehr spannend da Vagrant für mich komplett neu war. Ich lernte vieles neues dazu und auch das Markdown hat mir sehr spass gemacht zu erstellen und eine neue Art zu Dokumentieren kennen zu lernen. Probleme hatte ich ansich nicht viele es ging einfach eine Zeit bis ich mich in die ganze Umgebung eingelesen habe und mir die ganzen Standart sowie erweiterten Befehle angeübt habe. In Zukunft werde ich glaube ich öfters wieder mal mit Mardown Dokumentieren soweit es gut gebraucht werden könnte und die Kunden oder Lehrer es als Abgabe Form akzeptieren.
