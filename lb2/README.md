@@ -25,13 +25,16 @@ In dieser LB2 lernen wir die Vagrant umgebung kennen und damit zu arbeiten. Das 
 <div id='Umgebung'/>
 
 # Umgebung VMs
+
 ![Umgebung](picture/umgebung.PNG)
+
+# VM Fileserver
 ![Umgebung2](picture/umgebung2.PNG)
 
 | Client   |      Server     |
 |:----------|:-------------|
 | Hostname --> ubuntuclient | Hostname --> ubuntuserver|
-| VM Name --> LB-Clinet|    VM Name --> LB-Fileserver  |
+| VM Name --> LB-Client|    VM Name --> LB-Fileserver  |
 | IP:  192.168.9.47  |IP:  192.168.9.48  | 
 | | Samba |
 
