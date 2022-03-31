@@ -4,7 +4,8 @@
  1. [Einleitung](#Einleitung)
  
  1. [Umgebung VMs](#Umgebung) 
-
+    - [Client](#Client)
+    - [Fileserver](#Fileserver)
  2. [Code Beschreibung](#code)
 
  2. [Ablauf](#ablauf)
@@ -26,9 +27,12 @@ In dieser LB2 lernen wir die Vagrant umgebung kennen und damit zu arbeiten. Das 
 
 # Umgebung VMs
 
+<a name="Client"></a>
+## VM Fileserver
 ![Umgebung](picture/umgebung.PNG)
 
-# VM Fileserver
+<a name="Fileserver"></a>
+## VM Fileserver
 ![Umgebung2](picture/umgebung2.PNG)
 
 | Client   |      Server     |
