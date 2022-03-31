@@ -7,6 +7,9 @@
 
  2. [Code Beschreibung](#code)
 
+ 2. [Ablauf](#ablauf)
+    - [SSH](#ssh)
+    - [Samba](#samba)
  3. [Fazit](#Fazit)
 
 
@@ -107,8 +110,59 @@ VM Clinet
   end
 
 end
-
-<div id='Fazit'/>
-
-# Fazit
   ```
+<div id='ablauf'/>
+
+# Ablauf
+### Hochfahren:
+
+Um die Umgebung hoch zufahren, muss man im Terminal im **gleichen Ordner wie das Vagrantfile** sein und **vagrant up** eingeben. Dies dauert eine Weile, da es die Nötigen Daten herunterladet und die VMs erstellt und konfiguriert.
+
+<a name="herunterfahren"></a>
+### Herunterfahren:
+
+Wenn man nun die Umgebung herunterfahren möchte, muss man im Terminal im **gleichen Ordner wie das Vagrantfile** sein und **vagrant halt** eingeben.
+
+<a name="umgebung-löschen"></a>
+### Umgebung vom Gerät löschen:
+
+Um die Umgebung vom Gerät nun zu löschen, muss man im Terminal im **gleichen Ordner wie das Vagrantfile** sein und den Befehl **vagrant destroy** eingeben. 
+> **NOTE:** Man muss bei den Maschinen die beide Male **"y"** eingeben, um zu bestätigen, dass man die VMs auch wirklich löschen will.
+
+<a name="befehl-tabelle-vagrant"></a>
+
+### Befehl-Tabelle Vagrant:
+
+|Befehl    |Command (im Terminal)                    |
+|-------------------------|--------------------------|
+|hochfahren / erstellen   |`vagrant up`              |
+|herunterfahren           |`vagrant halt`            |
+|löschen                  |`vagrant destroy`         |
+
+<a name="ssh"></a>
+### SSH
+Auf dem LB-Fileserver sowie auf dem LB-Client sind die SSH User Vagrant.
+- Benutzername: vagrant
+- Passwort: vagrant
+
+<a name="samba"></a>
+### SAMBA
+
+Um auf den privaten Samba Share zugreifen zu können, braucht es einen privaten Benutzer: "lb-user"
+- Benutzername: lb-user
+- Passwort: password 
+
+
+## Zugreifen auf den privaten Share
+
+Zugreifen auf den Samba Share via Ubuntuclient Terminal:
+
+|welcher Share    |Command (im Terminal)                                    |
+|-----------------|---------------------------------------------------------|
+|privaten Share   |`smbclient //192.168.10.5/lb-user -U lb-user`              |
+|public Share     |`smbclient //192.168.10.5/public`                        |
+|Allgemein        |`smbclient //*IP Adresse*/*Ordner* -U *Benutzername*`    |
+
+
+## Ordner erstellen und anzeigen
+Wenn wir Zugriff auf die Shares haben, können wir nun darauf Ordner erstellen.
