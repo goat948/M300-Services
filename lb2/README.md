@@ -28,7 +28,7 @@ In dieser LB2 lernen wir die Vagrant umgebung kennen und damit zu arbeiten. Das 
 # Umgebung VMs
 
 <a name="Client"></a>
-## VM Fileserver
+## VM Client
 ![Umgebung](picture/umgebung.PNG)
 
 <a name="Fileserver"></a>
