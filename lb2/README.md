@@ -25,7 +25,7 @@ In dieser LB2 lernen wir die Vagrant umgebung kennen und damit zu arbeiten. Das 
 <div id='Umgebung'/>
 
 # Umgebung VMs
-
+![M300-Banner](picture/umgebung.png)
 
 | Client   |      Server     |
 |:----------|:-------------|
