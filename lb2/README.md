@@ -26,6 +26,7 @@ In dieser LB2 lernen wir die Vagrant umgebung kennen und damit zu arbeiten. Das 
 
 # Umgebung VMs
 ![Umgebung](picture/umgebung.PNG)
+![Umgebung2](picture/umgebung2.PNG)
 
 | Client   |      Server     |
 |:----------|:-------------|
