@@ -10,6 +10,7 @@
  2. [Ablauf](#ablauf)
     - [SSH](#ssh)
     - [Samba](#samba)
+    - [Exit](#exit)
  3. [Fazit](#Fazit)
 
 
@@ -159,10 +160,23 @@ Zugreifen auf den Samba Share via Ubuntuclient Terminal:
 
 |welcher Share    |Command (im Terminal)                                    |
 |-----------------|---------------------------------------------------------|
-|privaten Share   |`smbclient //192.168.10.5/lb-user -U lb-user`              |
-|public Share     |`smbclient //192.168.10.5/public`                        |
+|privaten Share   |`smbclient //192.168.9.48/lb-user -U lb-user`              |
+|public Share     |`smbclient //192.168.9.48/public`                        |
 |Allgemein        |`smbclient //*IP Adresse*/*Ordner* -U *Benutzername*`    |
 
 
 ## Ordner erstellen und anzeigen
 Wenn wir Zugriff auf die Shares haben, können wir nun darauf Ordner erstellen.
+
+<a name="exit"></a>
+## Exit
+
+### Aus Sambashare
+
+Um den Share zu verlassen, in welchen man sich eingeloggt hat, muss man nur einen Befehl eingeben:
+> exit
+
+### Aus SSH
+
+Um die SSH Verbindung (im Terminal von z.B. Visual Studio Code,...) zu trennen, muss man lediglich einen Befehl eingeben:
+> exit
