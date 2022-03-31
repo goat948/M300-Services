@@ -50,6 +50,7 @@ Jeder kann auf diese Freigabe zugreifen. Hier ist kein Konto erforderlich, jeder
 
 Im code wird oben zuerst der Hostname definiert, später definieren wir für den Fileserver eine IP Adresse angegeben, diese IP Adresse muss im gleichem Netzwerk wie die vom Client sein, wir haben eine /24 Subnetzmaske (192.168.9.xxx). Bei der VM Konfiguration definieren wir den VM Namen der und Virtual Box anzeigen wird. Bei den letzten Zeilen geben wir nun noch unsere gewünschte Hardware Konfiguration. (CPU & RAM)
 
+VM Server (Samba)
 ```ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
@@ -78,6 +79,10 @@ Vagrant.configure("2") do |config|
     # Provision Script
     fileserver.vm.provision "shell", path: "provision/serverdeployment.sh"
   end
+  
+  ```
+VM Clinet
+```ruby
  # Client VM
   config.vm.define "ubuntuclient" do |client|
     client.vm.hostname = "ubuntuclient"
@@ -102,7 +107,8 @@ Vagrant.configure("2") do |config|
   end
 
 end
-```
+
 <div id='Fazit'/>
 
 # Fazit
+  ```
